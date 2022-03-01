@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SocReg</string>
+    <string name="main">Main</string>
+    <string name="sms" translatable="false">SMS</string>
+    <string name="proxy" translatable="false">Proxy</string>
+    <string name="logs">Logs</string>
+    <string name="enter_ip">Enter the IP address of the proxy</string>
+    <string name="enter_proxy_port">Enter the proxy port</string>
+    <string name="enter_proxy_login">Enter proxy login</string>
+    <string name="enter_proxy_password">Enter the proxy password</string>
+    <string name="save">Save</string>
+    <string name="task_at_work">Task at work</string>
+    <string name="account_registration">Account registration</string>
+    <string name="date_birth_from">Date of birth from</string>
+    <string name="date_of_birth_to">Date of birth to</string>
+</resources>
