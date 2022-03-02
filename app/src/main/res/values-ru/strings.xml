@@ -12,4 +12,10 @@
     <string name="account_registration">Регистрация аккаунтов</string>
     <string name="date_birth_from">Дата рождения от</string>
     <string name="date_of_birth_to">Дата рождения до</string>
+    <string name="gender">Пол</string>
+    <string name="anyone">Любой</string>
+    <string name="female">Женский</string>
+    <string name="male">Мужской</string>
+    <string name="balance">Баланс</string>
+    <string name="by_default">По умолчанию</string>
 </resources>

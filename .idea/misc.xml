@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/SocReg/app/src/main/res/drawable/a.xml" value="0.1865" />
+        <entry key="..\:/Users/Admin/SocReg/app/src/main/res/drawable/b.xml" value="0.1865" />
+        <entry key="..\:/Users/Admin/SocReg/app/src/main/res/drawable/ic_note.xml" value="0.121" />
+        <entry key="..\:/Users/Admin/SocReg/app/src/main/res/drawable/ic_sms.xml" value="0.121" />
+        <entry key="..\:/Users/Admin/SocReg/app/src/main/res/drawable/ic_wan.xml" value="0.121" />
+        <entry key="..\:/Users/Admin/SocReg/app/src/main/res/drawable/radiobutton_bacground.xml" value="0.1865" />
         <entry key="..\:/Users/radik/AndroidStudioProjects/SocReg/app/src/main/res/drawable/ic_book.xml" value="0.1" />
         <entry key="..\:/Users/radik/AndroidStudioProjects/SocReg/app/src/main/res/drawable/ic_home.xml" value="0.1185" />
         <entry key="..\:/Users/radik/AndroidStudioProjects/SocReg/app/src/main/res/drawable/ic_movie.xml" value="0.1185" />
@@ -11,7 +17,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

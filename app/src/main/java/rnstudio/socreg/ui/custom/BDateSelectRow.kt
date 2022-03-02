@@ -103,7 +103,7 @@ private fun BDateSelectView(datePicked : String?, updatedDate : ( date : Long? )
 private fun timeToDate(time: String?): String?{
     val simpleDateFormat = SimpleDateFormat("dd.MM.yyyy")
     val calendar = Calendar.getInstance()
-    if (time != null) {
+    if (time != null && time.isNotEmpty()) {
         calendar.timeInMillis = time.toLong()
     }
     return simpleDateFormat.format(calendar.time)

@@ -7,6 +7,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -64,7 +65,7 @@ class SMSServiceView(_name: String, _apiKey: String, _id: Int) {
                         .fillMaxWidth()
                 ) {
                     Text(
-                        text = "По умолчанию",
+                        text = stringResource(id = R.string.by_default),
                         color = Color.White,
                         fontSize = 14.sp
                     )
@@ -75,7 +76,7 @@ class SMSServiceView(_name: String, _apiKey: String, _id: Int) {
                     .fillMaxWidth()
             ) {
                 Text(
-                    text = "Баланс: $balance",
+                    text = stringResource(id = R.string.balance) + ": $balance",
                     color = Color.White,
                     fontSize = 14.sp
                 )

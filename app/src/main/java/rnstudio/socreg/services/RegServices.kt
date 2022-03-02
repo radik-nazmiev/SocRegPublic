@@ -4,11 +4,14 @@ import android.app.NotificationManager
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
+import kotlinx.coroutines.Job
 import rnstudio.socreg.Notification
 import rnstudio.socreg.R
+import rnstudio.socreg.utils.Work
 
 class RegServices: Service() {
     private var notificationBuilder: android.app.Notification.Builder? = null
+    private var job: Job? = null
 
     override fun onBind(p0: Intent?): IBinder? {
         return null
@@ -31,9 +34,14 @@ class RegServices: Service() {
         super.onStart(intent, startId)
 
         startForeground(1, notificationBuilder?.build())
+
+        val work = Work()
+        job = work.start()
     }
 
     override fun onDestroy() {
+        job?.cancel()
+
         super.onDestroy()
     }
 }

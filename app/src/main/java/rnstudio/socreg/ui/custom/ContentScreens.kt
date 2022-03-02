@@ -179,7 +179,7 @@ fun MoviesScreen() {
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
-            text = "Movies View",
+            text = "",
             fontWeight = FontWeight.Bold,
             color = Color.White,
             modifier = Modifier.align(Alignment.CenterHorizontally),
@@ -331,7 +331,7 @@ fun ProfileScreen() {
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
-            text = "Profile View",
+            text = "",
             fontWeight = FontWeight.Bold,
             color = Color.White,
             modifier = Modifier.align(Alignment.CenterHorizontally),

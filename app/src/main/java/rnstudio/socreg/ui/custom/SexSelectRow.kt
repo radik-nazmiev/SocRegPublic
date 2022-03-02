@@ -1,5 +1,6 @@
 package rnstudio.socreg.ui.custom
 
+import android.content.Context
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -14,6 +15,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -32,6 +34,7 @@ import rnstudio.socreg.view_models.MainScreenViewModel
 fun SexSelectRow() {
     val coroutineScope = rememberCoroutineScope()
     val dataStorePreferenceRepository = App.getDataStore()
+    val context = LocalContext.current
     val viewModel: MainScreenViewModel = viewModel(factory = DataStoreViewModelFactory(dataStorePreferenceRepository))
     val genders by viewModel.userGenders.observeAsState()
     viewModel.getSelectedGender()
@@ -45,7 +48,7 @@ fun SexSelectRow() {
         modifier = Modifier.padding(0.dp, 0.dp, 0.dp, 10.dp)
     ){
         Text(
-            text = "Пол:",
+            text = stringResource(id = R.string.gender) + ":",
             color = Color.White,
             fontSize = 18.sp
         )
@@ -66,7 +69,7 @@ fun SexSelectRow() {
             )
             {
                 Text(
-                    text = genderMatching(gender.name),
+                    text = genderMatching(gender.name, context),
                     style = MaterialTheme.typography.body1.merge(),
                     color = Color.White,
                     modifier = Modifier
@@ -110,21 +113,12 @@ class DataStoreViewModelFactory(private val dataStorePreferenceRepository: DataS
         }
     }
 
-private fun genderMatching(selectedGender: String): String{
+private fun genderMatching(selectedGender: String, context: Context): String{
     return when(selectedGender){
-        "unset" -> "Любой"
-        "woman" -> "Женский"
-        "man" -> "Мужской"
-        else -> "Любой"
-    }
-}
-
-private fun genderReversMatching(selectedGender: String): String{
-    return when(selectedGender){
-        "Любой" -> "unset"
-        "Женский" -> "woman"
-        "Мужской" -> "man"
-        else -> "unset"
+        "unset" -> context.getString(R.string.anyone)
+        "woman" -> context.getString(R.string.female)
+        "man" -> context.getString(R.string.male)
+        else -> context.getString(R.string.anyone)
     }
 }
 
