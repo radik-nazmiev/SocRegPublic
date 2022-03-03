@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SocReg</string>
+    <string name="main">Осн.</string>
+    <string name="logs">Журнал</string>
+    <string name="enter_ip">Введите IP адрес прокси</string>
+    <string name="enter_proxy_port">Введите порт прокси</string>
+    <string name="enter_proxy_login">Введите логин прокси</string>
+    <string name="enter_proxy_password">Введите пароль прокси</string>
+    <string name="save">Сохранить</string>
+    <string name="task_at_work">Задание в работе</string>
+    <string name="account_registration">Регистрация аккаунтов</string>
+    <string name="date_birth_from">Дата рождения от</string>
+    <string name="date_of_birth_to">Дата рождения до</string>
+    <string name="gender">Пол</string>
+    <string name="anyone">Любой</string>
+    <string name="female">Женский</string>
+    <string name="male">Мужской</string>
+    <string name="balance">Баланс</string>
+    <string name="by_default">По умолчанию</string>
+</resources>
